@@ -204,7 +204,7 @@ function allFunc(){
               moneyWithheld = amountValue * 0.002;
             moneyWithheldPlusAmount = moneyWithheld+amountValue;
               moneyLeft = (balanceAmount - moneyWithheldPlusAmount).toFixed(2);
-              moneyMsg.textContent=`Успешно изтеглихте ${amountValue} BGN. Върнете се менюто, моля!`;
+              moneyMsg.textContent=`Успешно изтеглихте ${amountValue} BGN. Върнете се менюто!`;
 
               
               let moneyLeftInf = document.getElementById('moneyLeftInf');
