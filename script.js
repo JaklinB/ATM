@@ -199,10 +199,12 @@ function allFunc(){
             
               
             if(balanceAmount > amountValue && amountValue<=400 && amountValue!=0){
-            moneyWithheld = amountValue * 0.002;
+            enter.style.pointerEvents = 'none';
+            
+              moneyWithheld = amountValue * 0.002;
             moneyWithheldPlusAmount = moneyWithheld+amountValue;
               moneyLeft = (balanceAmount - moneyWithheldPlusAmount).toFixed(2);
-              moneyMsg.textContent=`Успешно изтеглихте ${amountValue} BGN`;
+              moneyMsg.textContent=`Успешно изтеглихте ${amountValue} BGN. Върнете се менюто, моля!`;
 
               
               let moneyLeftInf = document.getElementById('moneyLeftInf');
@@ -294,6 +296,7 @@ function allFunc(){
         moneyWithheld=0;
         amountValue=0;
         moneyLeft=0;
+        enter.style.pointerEvents = 'auto';
             
         /*dateNTimeT.textContent='';
         amountT.textContent='';
