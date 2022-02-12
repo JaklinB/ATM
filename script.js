@@ -115,7 +115,10 @@ function allFunc(){
                 incTimer();
                 } else {
                     msg.innerHTML = 'Готово!';
+
                     blocked.innerHTML = 'Опитайте отново!';
+                    msgShow(blocked);
+            
                     enter.style.pointerEvents = 'auto';
                     amountInput.textContent='';
                     tryCount=3;
