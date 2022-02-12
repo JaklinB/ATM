@@ -125,7 +125,8 @@ function allFunc(){
 
           /* CHECK PASSWORD */
         function checkPassword() { 
-        if(PINinput.value.match('3333')) { 
+    
+        if(PINinput.value === ('3333')) { 
             msg.textContent='Достъп потвърден. Изберете опция!';
             msg.style.color='#13AE13';
             PINinput.value = '';
