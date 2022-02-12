@@ -1,0 +1,465 @@
+:root{
+    --main-color: #bfbfbf;
+    --first-color: #b50717;
+    --second-color: #1d1d1d;
+}
+
+.atm-container {
+    background: var(--main-color);
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    height: 660px;
+    width: 1100px;
+}
+
+.title{
+    padding: 1%;
+    text-align: center;
+    color: var(--second-color);
+    background-color: var(--first-color);
+    border: 3px solid var(--second-color);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.position-help{
+    display: flex;
+    background-color: #0E2F44;
+padding: 1%;
+border-radius: 5px;
+}
+
+
+.screen {
+    background: #ADDBED;
+    border-radius: 15px;
+    border: 5px solid #0E2F44;
+    overflow: hidden;
+    padding: 30px;
+    width: 450px;
+    height: 200px;
+}
+
+.putUrCard{
+    width: 25%;
+}
+
+.btn{
+    background-color: #DAE0E5;
+    border: 1px solid #0E2F44;
+    width: 55px;
+    height: 40px;
+    border-radius: 8px;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.btn:active{
+    transform: scale(.98);
+}
+
+.btn:hover {
+    animation-name: shine;
+    animation-duration: 260ms;
+  }
+  
+  @keyframes shine {
+    0% {
+      background: linear-gradient(
+        30deg, 
+        hsl(260, 85%, 95%) 0%, 
+        #DAE0E5 25%
+      );
+    }
+  
+    25% {
+      background: linear-gradient(
+        30deg, 
+        #DAE0E5 0%, 
+        hsl(260, 85%, 95%) 25%, 
+        #DAE0E5 50%);
+    }
+  
+    50% {
+      background: linear-gradient(
+        30deg,
+        #DAE0E5 0%, 
+        hsl(260, 85%, 95%) 50%, 
+        #DAE0E5 75%); 
+    }
+  
+    75% {
+      background: linear-gradient(
+        30deg, 
+        #DAE0E5 0%, 
+        hsl(260, 85%, 95%) 75%, 
+        #DAE0E5 100%); 
+    }
+  
+    100% {
+      background: linear-gradient(
+        30deg, 
+        #DAE0E5 0%, 
+        hsl(260, 85%, 95%) 100%); 
+    }
+  }
+
+.leftBtns{
+    display: grid;
+    margin: 1%;
+}
+
+.rightBtns{
+    display: grid;
+    margin: 1%;
+}
+
+.wrap{
+    width: 660px;
+    margin-left: 1%;
+}
+
+.dispenser{
+    height: 40px;
+    width: 380px;
+    padding: 1%;
+    margin: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    background-color: #5E6162;
+}
+
+.dispenser-innerborder{
+    height: 30px;
+    border: 4px solid var(--second-color);
+    border-radius: 7px;
+    border-bottom: unset;
+    border-right: unset;
+}
+
+.dispenser-body{
+    height: 30px;
+    background-color: var(--main-color);
+    border: 0.5px solid var(--second-color);
+    border-radius: 2px;
+}
+
+.keypad{
+    width: 230px;
+    height: 185px;
+    background-color: #0E2F44;
+    display: flex;
+    text-align: center;
+    margin: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+    border-radius: 7px;
+}
+
+.keypad.noneD{
+    display: none;
+}
+
+.keys{
+    display: inline-table;
+}
+
+.keysBig{
+    display: inline-table;
+    margin-left: 2%;
+}
+
+.key{
+    width: 40px;
+    height: 40px;
+    margin: 3px;
+    background-color: #bfbfbf;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.keyBig{
+    width: 70px;
+    height: 40px;
+    margin: 3px;
+}
+
+
+#enterWth{
+    background-color: #13AE13;
+    border: 2px solid var(--second-color);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#clearWth{
+    background-color: #fcf75e;
+    border: 2px solid var(--second-color);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#backWth{
+    background-color: var(--first-color);
+    border: 2px solid var(--second-color);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+#enterWth:active{
+    transform: scale(.98);
+}
+
+#clearWth:active{
+    transform: scale(.98);
+}
+
+#backWth:active{
+    transform: scale(.98);
+}
+
+
+
+
+
+#enter{
+    background-color: #13AE13;
+    border: 2px solid var(--second-color);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#clear{
+    background-color: #fcf75e;
+    border: 2px solid var(--second-color);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#back{
+    background-color: var(--first-color);
+    border: 2px solid var(--second-color);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+#enter:active{
+    transform: scale(.98);
+}
+
+#clear:active{
+    transform: scale(.98);
+}
+
+#back:active{
+    transform: scale(.98);
+}
+
+.card-place{
+    height: 40px;
+    width: 300px;
+    margin: 6%;
+    padding: 1%;
+    border-radius: 5px;
+    background-color: #5E6162;
+}
+
+.card-innerborder{
+    height: 30px;
+    border: 4px solid var(--second-color);
+    border-radius: 7px;
+    border-bottom: unset;
+    border-right: unset;
+}
+
+.card-body{
+    height: 30px;
+    background-color: var(--main-color);
+    border: 0.5px solid var(--second-color);
+    border-radius: 2px;
+    animation: glowing 1300ms infinite;
+}
+
+@keyframes glowing {
+    0% { 
+      box-shadow: 0 0 5px #a8a4a4;
+    }
+    50% {
+      box-shadow: 0 0 20px #bfbfbf;
+    }
+    100% {
+      box-shadow: 0 0 5px #9c9999;
+    }
+  }
+
+.all{
+    display: flex;
+}
+
+.card{
+    height: 322px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20%;
+    background-color: aliceblue;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.card-name{
+    transform-origin: 79px 133px;
+  transform: rotate(90deg);
+    letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.cardchip{
+    width: 30%;
+    margin-left: 0%;
+    margin-top: 35%;
+}
+
+.urName{
+    transform-origin: 30px 12px;
+  transform: rotate(90deg);
+    letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.card.insertCard {
+    animation: insertCard 2s 0s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes insertCard {
+    
+    100% {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        transform: translate(1px, -75px);
+   }
+}
+
+#PINinput{
+    background: #2656747e;
+    border: 1px solid #0E2F44;
+    width: 60px;
+    height: 20px;
+}
+
+.optionLeft{
+    text-align: start;
+    display: table-cell;
+}
+
+.optionRight{
+    text-align: end;
+    display: table-cell;
+}
+
+.firstLeftDiv{
+    height: 40px;
+    width: 140px;
+    background-color: #DAE0E5;
+    align-self: flex-end;
+    margin-top: 15px;
+}
+.secondLeftDiv{
+    height: 40px;
+    width: 140px;
+    background-color: #DAE0E5;
+    align-self: flex-end;
+    margin-top: 85px;
+}
+.firstRightDiv{
+    height: 40px;
+    width: 140px;
+    background-color: #DAE0E5;
+    align-self: flex-end;
+    margin-top: 15px;
+}
+.secondRightDiv{
+    height: 40px;
+    width: 140px;
+    background-color: #DAE0E5;
+    align-self: flex-end;
+    margin-top: 85px;
+}
+
+
+#cancelOption{
+    display: block;
+}
+#screenText{
+    display: none;
+}
+#menuScreen{
+    display: none;
+}
+#balanceScreen{
+    display: none;
+}
+
+#withdrawalScreen{
+    display: none;
+}
+
+#transacrionsScreen{
+    display: none;
+}
+
+#menuScreen.displayed{
+    display: block;
+}
+
+#balanceScreen.displayed{
+    display: block;
+}
+
+#withdrawalScreen.displayed{
+    display: block;
+}
+
+#transacrionsScreen.displayed{
+    display: block;
+}
+
+#screenText.displayed{
+    display: block;
+}
+
+#noMoneyMsg{
+    display: none;
+}
+#limitMoneyMsg{
+    display: none;
+}
+#cantBeZeroMsg{
+    display: none;
+}
+#mustBeCorrectMsg{
+    display: none;
+}
+
+#noMoneyMsg.displayed{
+    display: block;
+}
+#limitMoneyMsg.displayed{
+    display: block;
+}
+#cantBeZeroMsg.displayed{
+    display: block;
+}
+#mustBeCorrectMsg.displayed{
+    display: block;
+}
+

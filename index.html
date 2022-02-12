@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💰 Банкомат</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <div class="atm-container">
+        <h1 class="title">Банкомат</h1>
+
+<div class="all">
+    <div class="wrap">
+   
+        <div class="position-help">
+            <div class="leftBtns">
+                <button value="btn1" id="btn1" class="btn"></button>
+                <button value="btn2" id="btn2" class="btn"></button>
+            </div>
+                
+                <div class="screen" id="screen">
+                    <div id="screenText" class="displayed">
+                    <h2>Поставете Вашата карта!</h2>
+                    <img class="putUrCard" src="./putUrCard.png" alt="">
+                    </div>
+
+                    <div id="menuScreen">
+
+                    <h4 style="margin: 0px;">Въведете PIN, след което изберете опция.</h4>
+                    <input type="password" name="password" id="PINinput" pattern="[0-9]{4}" autocomplete="new-password" readonly="true" maxlength="4">
+                    <h6 style="display: inline;margin: 10px;" id="msg"></h6>
+
+
+                    <div style="display: flex;">
+
+                        <div class="leftDivElems" id="leftDivElems" style="display: grid;"> 
+                            <div class="firstLeftDiv" id="firstLeftDiv">
+                                <h4 id="balanceOption" class="optionLeft">Баланс по сметката</h4>
+                            </div>
+                            <div class="secondLeftDiv" id="secondLeftDiv">
+                                <h4 id="withdrawalOption"  class="optionLeft">Теглене на пари в брой</h4>
+                            </div>
+                        </div>
+    
+                        <div class="rightDivElems" id="rightDivElems" style="display: grid;margin-left: auto;"> 
+                            <div class="firstRightDiv" id="firstRightDiv">
+                                <h4 id="transactionsOption" class="optionRight">Справки и транзакции</h4>
+                            </div>
+                            <div class="secondRightDiv" id="secondRightDiv">
+                                <h4 id="cancelOption"  class="optionRight">Отказ</h4>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    </div>
+
+                    <div id="balanceScreen">
+                            <h2 id="balanceInfo" style="width: 170px;text-align: center;
+                            margin-left: auto;margin-right: auto;"></h2>
+                    </div>
+
+                    <div id="withdrawalScreen">
+
+                        <h2 style="text-align: center;margin: 0px;">Каква сума искате да изтеглите?</h2>
+                        <input id="withdrawalInput" type="text" readonly="true" style="display: block; margin-left: auto;margin-right: auto;">
+                        <h3 id="noMoneyMsg" style="text-align: center">Нямате достатъчно пари в наличност!</h3>
+                        <h3 id="limitMoneyMsg" style="text-align: center;">Лимитът на теглене е 400BGN!</h3>
+                        <h3 id="cantBeZeroMsg" style="text-align: center;">Въвели сте невалидна сума!</h3>
+                        <h3 id="mustBeCorrectMsg" style="text-align: center;">Сумата трябва да е точна!Разполагаме с банкноти от 100, 50, 20 и 10лв!</h3>
+                        <h3 id="blocked" style="text-align: center;"></h3>
+                        <h3 id="moneyMsg" style="text-align: center; margin: 0px;"></h3>
+                        <h4 id="dateandtimeMsg" style="text-align: center;margin: 0px;"></h4>
+                        <h4 id="banknotesInf" style="text-align: center;margin: 0px;"></h4>
+                        <h4 id="moneyLeftInf" style="text-align: center;margin: 0px;"></h4>
+                        <h4 id="withheldInf" style="text-align: center;margin: 0px;"></h4>
+                    </div>
+
+                    <div id="transacrionsScreen">
+                        <div id="transactionsDiv" class="transactionsDiv">
+                            <h3 style="text-align: center;margin: 0px;">Последно теглене</h3>
+                            <div id="transactions" class="transactions">
+                                <h3 id="dateNTimeT"></h3>
+                                <h3 id="amountT"></h3>
+                                <h3 id="withheldT"></h3>
+                                <h3 id="moneyLeftT"></h3>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+        
+            <div class="rightBtns">
+                <button value="btn3" id="btn3" class="btn"></button>
+                <button value="btn4" id="btn4" class="btn"></button>
+            </div>
+        
+        </div>
+        
+        <div class="dispenser">
+            <div class="dispenser-innerborder">
+                <div class="dispenser-body">
+        
+                </div>
+            </div>
+        </div>
+        
+        <div class="keypad">
+            <div class="keys">
+            <button class="key" value ="1">1</button>
+            <button class="key" value ="4">4</button>
+            <button class="key" value ="7">7</button>
+            </div>
+        
+            <div class="keys">
+            <button class="key" value ="2">2</button>
+            <button class="key" value ="5">5</button>
+            <button class="key" value ="8">8</button>
+            <button class="key" value ="0">0</button>
+            </div>
+            
+            <div class="keys">
+            <button class="key" value ="3">3</button>
+            <button class="key" value ="6">6</button>
+            <button class="key" value ="9">9</button>
+            </div>
+        
+            <div class="keysBig">
+                <button class="keyBig" id="enter" value ="enter">Enter</button>
+                <button class="keyBig" id="clear" value ="clear">Clear</button>
+                <button class="keyBig" id="back" value ="back">Back</button>
+            </div>
+        
+            
+        </div>
+        
+        </div>
+        
+        <div class="card-place">
+            <div class="card-innerborder">
+                <div class="card-body">
+
+                </div>
+            </div>
+            <div class="card">
+                <h3 class="card-name">Кредитна карта</h3>
+                <h4 class="urName">Твоето Име</h4>
+                <img class="cardchip" src="./cardchip.png" alt="">
+            </div>
+        </div>
+</div>
+
+
+    <script>
+        allFunc();
+    </script>
+
+      </div>
+      
+</body>
+</html>
